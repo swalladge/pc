@@ -10,6 +10,7 @@ Key:
 
 | backend       | title | expiry | password | email notification | auth | poster name | syntax / filetype   |
 | -------       | ----- | ------ | -------- | ------------------ | ---- | ----------- | -----------------   |
+| bpaste        |       | x      |          |                    |      |             | x                   |
 | dpaste        |       | x      |          |                    |      |             | x                   |
 | dpaste_com    | x     | x      |          |                    |      | x           | x                   |
 | fiche         |       |        |          |                    |      |             |                     |

@@ -16,3 +16,4 @@ A table of public pastebin servers that pc supports, along with the backend to u
 | https://dpaste.de/               | dpaste        |
 | https://paste.ubuntu.com/        | ubuntu        |
 | http://ix.io/                    | ix            |
+| https://bpaste.net/              | bpaste        |

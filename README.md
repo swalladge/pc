@@ -192,6 +192,7 @@ binary and used as the default config if no config file found.
 
 | server spec                                                         | backend         | example instance                 |
 | ------                                                              | -------         | ---------------                  |
+| [bpaste](https://bpaste.net/)                                       | `bpaste`        | https://bpaste.net/              |
 | [dpaste.com](http://dpaste.com/api/v2/)                             | `dpaste_com`    | http://dpaste.com/               |
 | [dpaste](https://github.com/bartTC/dpaste)\*                        | `dpaste`        | https://dpaste.de/               |
 | [fiche](https://github.com/solusipse/fiche)\*                       | `fiche`         | https://termbin.com/             |

@@ -52,3 +52,7 @@ url = "https://paste.ubuntu.com/"
 [servers.ix]
 backend = "ix"
 url = "http://ix.io/"
+
+[servers.bpaste]
+backend = "bpaste"
+url = "https://bpaste.net/"

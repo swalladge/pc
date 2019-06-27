@@ -198,3 +198,15 @@ syntax = "python"
 # file and api_token on the command line.
 username = "me"
 apikey = "hunter2"
+
+[servers.bpaste]
+backend = "bpaste"
+url = "https://bpaste.net/"
+
+# Optional values
+
+# Filetype for syntax highlighting. Default is set by the server.
+syntax = "python"
+
+# Paste lifetime. Supports "1day" and "1week". Default is 1 day.
+expires = "1week"
