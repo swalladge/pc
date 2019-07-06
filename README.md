@@ -28,12 +28,13 @@ often and do not want to debug failures because of api changes.
 
 Build from source:
 
-```
+```bash
 git clone git@github.com:swalladge/pc.git
 cd pc
-cargo build --release
-./target/release/pc --help
-# copy the binary ^ to your path to use from anywhere
+cargo build
+# to install from source:
+cargo install --force --path .
+pc --help
 ```
 
 Install from crates.io with cargo:
@@ -50,14 +51,14 @@ Arch user repository: [pc-git](https://aur.archlinux.org/packages/pc-git/),
 
 Simplest, out of the box usage:
 
-```
+```bash
 $ echo "Hello" | pc
 https://paste.rs/saC
 ```
 
 Select a custom server:
 
-```
+```bash
 $ pc vpaste < code.txt
 http://vpaste.net/example
 ```
@@ -67,14 +68,14 @@ which backend is used. Here, the `fedora` server block uses the `modern_paste`
 backend, which allows setting a custom title for the paste.
 Note: can only use server-specific args if specifying the server on the cli.
 
-```
+```bash
 $ pc fedora --title "foo debug log" < debug.log
 https://paste.fedoraproject.org/paste/7Taaazf88VimfqOnriOsFg
 ```
 
 To see a server block's configuration, backend, and allowed args:
 
-```
+```bash
 $ pc fedora --help
 [servers.fedora]
 backend = "modern_paste"
@@ -106,7 +107,7 @@ OPTIONS:
 
 Show a concise list of configured servers available to use:
 
-```
+```bash
 $ pc list
 rs => paste_rs | https://paste.rs/ [default]
 vpaste => vpaste | http://vpaste.net/
@@ -116,7 +117,7 @@ haste => haste | https://hastebin.com/
 
 List all supported backends:
 
-```
+```bash
 $ pc list-backends
 paste_rs
 haste
@@ -126,7 +127,7 @@ vpaste
 
 Show info and configuration help for a particular backend:
 
-```
+```bash
 $ pc show-backend fiche
 Fiche backend.
 Supports any servers running fiche <https://github.com/solusipse/fiche>.
@@ -147,7 +148,7 @@ Example config block:
 
 Dump the current config as interpreted. Helpful for debugging.
 
-```
+```bash
 $ pc dump-config
 <toml config as currently used>
 ```
@@ -156,13 +157,13 @@ Copy the default config to the user config file. Could be useful for first
 setup (although the [example config](./example_config.toml) with comments may
 be more helpful).
 
-```
+```bash
 $ mkdir -p ~/.config/pc/ && pc -c NONE dump-config > ~/.config/pc/config.toml
 ```
 
 Histfile feature can also be disabled temporarily with args:
 
-```
+```bash
 $ echo "hi" | pc --histfile NONE
 http://vpaste.net/example
 ```
