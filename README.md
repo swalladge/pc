@@ -26,7 +26,7 @@ often and do not want to debug failures because of api changes.
 
 ## Installation
 
-Build from source:
+Build from source (git clone):
 
 ```bash
 git clone git@github.com:swalladge/pc.git
