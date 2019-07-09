@@ -28,21 +28,29 @@ often and do not want to debug failures because of api changes.
 
 Build from source:
 
-```
+```bash
 git clone git@github.com:swalladge/pc.git
 cd pc
 cargo build --release
 ./target/release/pc --help
-# copy the binary ^ to your path to use from anywhere
+# Copy the binary above to your system path to use from anywhere.
 ```
 
-Install from crates.io with cargo:
+Install latest release from crates.io with cargo (note that cargo installs
+binaries to `~/.cargo/bin` by default, and it is not recommended to use cargo
+as a system package manager alternative):
 
 ```
 cargo install pc
 ```
 
-Arch user repository: [pc-git](https://aur.archlinux.org/packages/pc-git/),
+Use cargo to install the latest git master:
+
+```
+cargo install --git https://github.com/swalladge/pc
+```
+
+Arch users can use the PKGBUILDs available on the AUR: [pc-git](https://aur.archlinux.org/packages/pc-git/),
 [pc](https://aur.archlinux.org/packages/pc/).
 
 
